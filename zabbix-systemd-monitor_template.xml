@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>3.0</version>
-    <date>2016-10-30T20:44:42Z</date>
+    <date>2016-10-30T21:22:11Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -202,7 +202,7 @@ Require:&#13;
                     <trigger_prototypes>
                         <trigger_prototype>
                             <expression>{Systemd Template:systemd.unit.is-active[{#UNIT}].last(#1)}&lt;&gt;1 and {Systemd Template:systemd.unit.is-enabled[{#UNIT}].last(#1)}&lt;&gt;1 and {Systemd Template:systemd.unit.is-failed[{#UNIT}].last(#1)}=1</expression>
-                            <name>{#UNIT} Status</name>
+                            <name>Systemd: {#UNIT}</name>
                             <url/>
                             <status>0</status>
                             <priority>5</priority>
